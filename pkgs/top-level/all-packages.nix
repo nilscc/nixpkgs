@@ -14902,6 +14902,10 @@ with pkgs;
     jackLibrary = libjack2; # Another option is "pipewire.jack".
     ffmpeg = ffmpeg_4-headless;
   };
+  reaper_6 = callPackage ../applications/audio/reaper/6.x.nix {
+    jackLibrary = libjack2; # Another option is "pipewire.jack".
+    ffmpeg = ffmpeg_4-headless;
+  };
 
   reddsaver = callPackage ../applications/misc/reddsaver {
     inherit (darwin.apple_sdk.frameworks) Security;
