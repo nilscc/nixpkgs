@@ -13131,6 +13131,19 @@ final: prev: {
     meta.hydraPlatforms = [ ];
   };
 
+  prettier-nvim = buildVimPlugin {
+    pname = "prettier.nvim";
+    version = "2025-04-08";
+    src = fetchFromGitHub {
+      owner = "MunifTanjim";
+      repo = "prettier.nvim";
+      rev = "ca6452de1accc68a1062e72f58679caa488b501a";
+      sha256 = "0875708hpz7gm8gwwqfqh5dpfpplfdm1193l9fmxvb2ygyqay4d5";
+    };
+    meta.homepage = "https://github.com/MunifTanjim/prettier.nvim/";
+    meta.hydraPlatforms = [ ];
+  };
+
   pretty-fold-nvim = buildVimPlugin {
     pname = "pretty-fold.nvim";
     version = "3.0-unstable-2022-07-20";
