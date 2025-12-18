@@ -1168,12 +1168,12 @@ final: prev: {
 
   auto-fix-return-nvim = buildVimPlugin {
     pname = "auto-fix-return.nvim";
-    version = "2025-12-16";
+    version = "2025-12-18";
     src = fetchFromGitHub {
       owner = "Jay-Madden";
       repo = "auto-fix-return.nvim";
-      rev = "010462311fca08f1fb790811d69d03620b6d6ba7";
-      sha256 = "sha256-sqnRP0wr25FS3JzwoPCZizkfwbepwj7/9i+TuBQJisk=";
+      rev = "bae578b0105899b5edb80f0fa8af63ab8409ffba";
+      sha256 = "05740gkvq47r8hch6ll6li4ni28hj6c0mwrs5izncl68limqni0f";
     };
     meta.homepage = "https://github.com/Jay-Madden/auto-fix-return.nvim/";
     meta.hydraPlatforms = [ ];
