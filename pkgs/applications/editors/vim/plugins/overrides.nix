@@ -72,6 +72,8 @@
   gitMinimal,
   # opencode-nvim,
   opencode,
+  # prettier-nvim dependencies
+  prettier,
   # Preview-nvim dependencies
   md-tui,
   # sidekick-nvim dependencies
@@ -3034,6 +3036,16 @@ assertNoAdditions {
 
   popup-nvim = super.popup-nvim.overrideAttrs {
     dependencies = [ self.plenary-nvim ];
+  };
+
+  prettier-nvim = super.prettier-nvim.overrideAttrs {
+    runtimeDeps = [
+      prettier
+    ];
+    dependencies = with self; [
+      nvim-lspconfig
+      none-ls-nvim
+    ];
   };
 
   Preview-nvim = super.Preview-nvim.overrideAttrs {
